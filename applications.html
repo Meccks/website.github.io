@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+        </style>
+</head>
+<body>
+    <fieldset id="noBorder" class="logoAndNav">
+        <nav class="navbar">
+
+            <a class="active" href="index.html">Home</a>
+            <a href="jobreq.html">Job Specification & Requirements</a>
+            <a href="https://www.w3schools.com">Web Development Courses</a>
+            <a href="applications.html">Applications</a>
+            <a href="aboutEmp.html">Trainee Profiles</a>
+            <a href="#contactUs">Contact Us</a>
+        </nav>        
+    </div>
+
+    <div class="col-3"></div>
+    <div class="col-9">
+        <img class="logo" src="Images/Hot Bean.png" alt="">
+    </div>
+    </fieldset>
+
+    <fieldset id="noBorder" class="logoAndNavMobile">
+    <div class="navbarMobile">
+        <nav>
+            <a class="active" href="index.html">Home</a>
+            <a href="#contactUs">Contact Us</a>
+            <div class="dropdown">
+              <a class="dropdown__hover">More</a>
+              <div class="dropdown__menu">
+                <a href="jobreq.html">Job Specification & Requirements</a>
+                <a href="https://www.w3schools.com">Web Development Courses</a>
+                <a href="applications.html">Applications</a>
+                <a href="aboutEmp.html">Trainee Profiles</a>
+              </div>
+            </div>
+
+        </nav>        
+        <div class="col-9">
+            <img class="logoMobile" src="Images/Hot Bean (Mobile).png" alt="">
+        </div>
+    </div>
+</fieldset>
+
+<fieldset class="sectionHeading">
+    <h3>Application Form</h3>
+</fieldset>
+
+
+<fieldset class="applicationBox">
+    <form name="applicationFormQuestions" onsubmit="return validateForm()">
+
+        <fieldset class="applicationForm">
+            <legend>Application Questions</legend>
+            <br>
+            <div class="col-4">
+                <label>What is your highest level of qualification?</label>
+                <br>
+                <br>
+            </div>
+            <div class="col-2">
+                <select name="qualLevel" required>
+                    <option  name="GCSE"> GCSE</option>
+                    <option  name="ALevel"> A Level</option>
+                    <option  name="Degree"> Degree</option>
+                    <option  name="OtherQual"> Other</option>    
+                </select>
+            </div>
+        
+            <br>
+            <br>
+            <br>
+            <br>
+        
+            <div class="col-4">
+                <label>What was it about this job post that enticed you to apply?</label>
+                <br>
+                <br>
+            </div>
+            <div class="col-5">
+                <input type="text" name="enticedJobQuestion" placeholder="" required>
+            </div>
+        
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        
+            <div class="col-4">
+                <label>What would you say is your biggest weakness?</label>
+                <br>
+                <br>
+            </div>
+            <div class="col-5">
+                <input type="text" name="weaknessQuestion" placeholder="" required>
+            </div>
+        </fieldset>
+
+        <fieldset class="applicationForm">
+            <legend>Contact Details</legend>
+            <div class="col-2">
+                <label>First name:</label>
+            </div>
+            <div class="col-7">
+                <input type="text" name="firstname" placeholder="" required>
+            </div>
+        
+            <div class="col-2">
+                <label>Last name:</label>
+            </div>
+            <div class="col-7">
+                <input type="text" name="lastname" placeholder="" required>
+            </div>
+        
+            <div class="col-2">
+                <label>Enter your email:</label>
+            </div>
+            <div class="col-7">
+                <input type="email" name="email" placeholder="" required>
+            </div>
+        
+            <div class="col-2">
+                <label>Enter your phone number: </label>
+            </div>
+            <div class="col-7">
+                <input type="tel" placeholder="01234123456" pattern="[0-9]{11}" required name="telephone">
+            </div>
+        </fieldset>
+
+        <div class="submit">
+            <div>
+                <input type="submit" value="Submit" name="submit" >
+            </div>
+        </div> 
+        
+</fieldset>
+
+<fieldset class="sectionHeadingMobile">
+    <h3>Application Form</h3>
+</fieldset>
+
+<fieldset class="applicationBoxMobile">
+    <form name="applicationFormQuestions" onsubmit="return validateForm()">
+
+        <fieldset class="applicationFormMobile">
+            <legend>Application Questions</legend>
+            <br>
+            <div class="col-4">
+                <label>What is your highest level of qualification?</label>
+                <br>
+                <br>
+            </div>
+            <div class="col-2">
+                <select name="qualLevel" required>
+                    <option  name="GCSE"> GCSE</option>
+                    <option  name="ALevel"> A Level</option>
+                    <option  name="Degree"> Degree</option>
+                    <option  name="OtherQual"> Other</option>    
+                </select>
+            </div>
+        
+            <br>
+            <br>
+            <br>
+            <br>
+        
+            <div class="col-4">
+                <label>What was it about this job post that enticed you to apply?</label>
+                <br>
+                <br>
+            </div>
+            <div class="col-5">
+                <input type="text" name="enticedJobQuestion" placeholder="" required>
+            </div>
+        
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        
+            <div class="col-4">
+                <label>What would you say is your biggest weakness?</label>
+                <br>
+                <br>
+            </div>
+            <div class="col-5">
+                <input type="text" name="weaknessQuestion" placeholder="" required>
+            </div>
+        </fieldset>
+
+        <fieldset class="applicationFormMobile">
+            <legend>Contact Details</legend>
+            <div class="col-2">
+                <label>First name:</label>
+            </div>
+            <div class="col-7">
+                <input type="text" name="firstname" placeholder="" required>
+            </div>
+        
+            <div class="col-2">
+                <label>Last name:</label>
+            </div>
+            <div class="col-7">
+                <input type="text" name="lastname" placeholder="" required>
+            </div>
+        
+            <div class="col-2">
+                <label>Enter your email:</label>
+            </div>
+            <div class="col-7">
+                <input type="email" name="email" placeholder="" required>
+            </div>
+        
+            <div class="col-2">
+                <label>Enter your phone number: </label>
+            </div>
+            <div class="col-7">
+                <input type="tel" placeholder="01234123456" pattern="[0-9]{11}" required name="telephone">
+            </div>
+        </fieldset>
+            <div class="submit">
+                 <input  type="submit" value="Submit" name="submit" >  
+            </div>
+        
+</fieldset>
+
+
+<fieldset class="sectionHeadingMobile">
+    <h3>Contact Information</h3>
+</fieldset>
+
+<fieldset id="contactUs" class="contactUs">
+    
+    <div class="col-3">
+        <a href="https://www.facebook.com/" class="fa fa-2x fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-2x fa-twitter"></a>
+        <a href="https://www.instagram.com/" class="fa fa-2x fa-instagram"></a>
+    </div>
+        <div class="col-3">
+            <p>Tel - 08000 380 123</p>
+        </div>
+        <div class="col-3">
+            <p>Email - CustomerSupport@Hotbean.co.uk</p>
+        </div>
+</fieldset>
+
+
+<script src="script.js"></script>
+</body>
+</html>
