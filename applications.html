@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hot Beans - Application Form</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -26,7 +26,7 @@
 
     <div class="col-3"></div>
     <div class="col-9">
-        <img class="logo" src="Images/Hot Bean.png" alt="">
+        <img class="logo" src="Images/Hot Bean (Mobile).png" alt="">
     </div>
     </fieldset>
 
@@ -34,7 +34,7 @@
     <div class="navbarMobile">
         <nav>
             <a class="active" href="index.html">Home</a>
-            <a href="#contactUs">Contact Us</a>
+            <a  href="#contactUs">Contact Us</a>
             <div class="dropdown">
               <a class="dropdown__hover">More</a>
               <div class="dropdown__menu">
@@ -63,48 +63,55 @@
         <fieldset class="applicationForm">
             <legend>Application Questions</legend>
             <br>
-            <div class="col-4">
-                <label>What is your highest level of qualification?</label>
-                <br>
-                <br>
-            </div>
-            <div class="col-2">
-                <select name="qualLevel" required>
-                    <option  name="GCSE"> GCSE</option>
-                    <option  name="ALevel"> A Level</option>
-                    <option  name="Degree"> Degree</option>
-                    <option  name="OtherQual"> Other</option>    
-                </select>
-            </div>
-        
-            <br>
-            <br>
-            <br>
-            <br>
-        
-            <div class="col-4">
-                <label>What was it about this job post that enticed you to apply?</label>
-                <br>
-                <br>
-            </div>
-            <div class="col-5">
-                <input type="text" name="enticedJobQuestion" placeholder="" required>
+            <div class="col-9">
+                <div class="col-4">
+                    <label>What is your highest level of qualification?</label>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-2">
+                    <select name="qualLevel" >
+                        <option  name="GCSE"> GCSE</option>
+                        <option  name="ALevel"> A Level</option>
+                        <option  name="Degree"> Degree</option>
+                        <option  name="OtherQual"> Other</option>    
+                    </select>
+                </div>
             </div>
         
             <br>
             <br>
             <br>
             <br>
-            <br>
+            
+            <div class="col-9">
+                <div class="col-4">
+                    <label>What was it about this job post that enticed you to apply?</label>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-5">
+                    <input type="text" name="enticedJobQuestion" placeholder="" >
+                </div>
+            </div>
+
         
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        <div class="col-9">
             <div class="col-4">
                 <label>What would you say is your biggest weakness?</label>
                 <br>
                 <br>
             </div>
             <div class="col-5">
-                <input type="text" name="weaknessQuestion" placeholder="" required>
+                <input type="text" name="weaknessQuestion" placeholder="" >
             </div>
+        </div>
+
         </fieldset>
 
         <fieldset class="applicationForm">
@@ -143,7 +150,7 @@
                 <input type="submit" value="Submit" name="submit" >
             </div>
         </div> 
-        
+    </form>  
 </fieldset>
 
 <fieldset class="sectionHeadingMobile">
@@ -233,9 +240,13 @@
             <div class="submit">
                  <input  type="submit" value="Submit" name="submit" >  
             </div>
-        
+        </form>  
 </fieldset>
 
+
+<fieldset class="sectionHeading">
+    <h3>Contact Information</h3>
+</fieldset>
 
 <fieldset class="sectionHeadingMobile">
     <h3>Contact Information</h3>
