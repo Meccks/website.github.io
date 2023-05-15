@@ -35,7 +35,7 @@ a{
     color: #c5c6c7;
     text-decoration: none;
 }
-
+ 
 p{
     color: #c5c6c7;
 }
@@ -81,10 +81,13 @@ legend{
       padding: 10px;
       background-color:#0b0c10;
       color: #c5c6c7;
-      border:0 solid #0b0c10;
+      border: 2 solid #0b0c10;
       cursor: pointer;
+      border-radius: 25px;
     }
-    .dropdown__hover:hover{background-color: #0b0c10;}
+    .dropdown__hover:hover{
+        background-color: #0b0c10;
+    }
     .dropdown__menu{
       position: absolute;
       display: none;
@@ -94,6 +97,7 @@ legend{
       background-color: #0b0c10;
       color: #0b0c10;
       box-shadow: 0 3px 2px rgba(0,0,0,0.3);
+      
     }
     .dropdown:hover .dropdown__menu{display: block;}
       .dropdown__menu a{
@@ -133,15 +137,13 @@ img{
 .navbar a{
     text-decoration: none;
     padding: 10px;
-    border-radius: 15px;
-
 }
 
 
 a:hover{
     background-color: #0b0c10;
     text-decoration: none;
-    opacity: 50%;
+    opacity: 100%;
     color: #66fcf1;
     transition: 0.4s;
 }
@@ -189,6 +191,7 @@ fieldset {
 .aboutBoxMobile, .applicationBoxMobile{
     background-color: transparent;
     border-style: none;
+
 }
 
 
@@ -284,9 +287,14 @@ fieldset {
     border-width: 2px;
 }
 
+input{
+    color: #c5c6c7;
+}
+
 input[type=text]:hover, input[type=email]:hover, input[type=tel]:hover {
     background-color: #0b0c10;
     transition: 0.2s;
+
 }
 
 
@@ -372,12 +380,27 @@ input[type=submit]{
     width: 231px;
     height: 231px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     border-radius: 100%;    
 }
 
-@media screen and (max-width: 600px) {
+#aboutEmp h2{
+    margin: auto;
+    text-align: center;
+    color: #66fcf1;
+    font-size: 30px;
+}
+
+#aboutImg{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;    
+}
+
+
+
+@media screen and (max-width: 768px) {
     .navbar{
         display: none;
     }
@@ -398,6 +421,7 @@ input[type=submit]{
 
     .navbarMobile a{
         padding: 10px;
+        
     }
 
     .aboutBox{
@@ -417,6 +441,7 @@ input[type=submit]{
     .aboutTopMobile{
         display: block;
         margin-top: 0;
+        margin-bottom: 75px;
     }
 
     #spaceLink{
@@ -519,20 +544,16 @@ input[type=submit]{
         display: none;
     }
 
-    .logoAndNavMobile img{
-
-    }
 
     .logoMobile{
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 300px;
-        height: 100px;
+        width: 60%;
+        height: 60%;
         margin-top: 70px;
-        }
+    }
     
-
 
     
 }
