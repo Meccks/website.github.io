@@ -8,40 +8,28 @@ function validateForm(){
 
     if (fname == "") {
         window.alert("Missing First Name");
-        let f = document.forms["applicationFormQuestions"]["firstname"];
-        f.setAttribute("style", "background-color: red");
         return false;
     }
     if (lname == "") {
         window.alert("Missing Last Name");
-        let f = document.forms["applicationFormQuestions"]["lastname"];
-        f.setAttribute("style", "background-color: red");
         return false;
     }
     if (email == "") {
-        window.alert("Missing Email ");
-        let f = document.forms["applicationFormQuestions"]["email"];
-        f.setAttribute("style", "background-color: red");
+        window.alert(""+fname+" " +lname+", you are missing your Email ");
         return false;
     }
     if (tel == "") {
-        window.alert("Missing Telephone number");
-        let f = document.forms["applicationFormQuestions"]["enticedJobQuestion"];
-        f.setAttribute("style", "background-color: red");
+        window.alert(""+fname+" " +lname+", you are missing your  Telephone number");
         return false;
     }
 
     if (enticed == "") {
-        window.alert("Missing an application question answer");
-        let f = document.forms["applicationFormQuestions"]["telephone"];
-        f.setAttribute("style", "background-color: red");
+        window.alert(""+fname+" " +lname+", you are missing an answer for an application question answer");
         return false;
     }
 
     if (weak == "") {
-        window.alert("Missing an application question answer");
-        let f = document.forms["applicationFormQuestions"]["weaknessQuestion"];
-        f.setAttribute("style", "background-color: red");
+        window.alert(""+fname+" " +lname+", you are missing an answer for an application question answer");
         return false;
     }
 
